@@ -1,0 +1,14 @@
+#Segment Typewriter Configuration (https://segment.com/docs/protocols/typewriter)
+#Just run `npx typewriter@next` to re-generate a client with the latest versions of these events.
+
+client:
+  #You can find more documentation on configuring this client in the Segment docs
+  #See: https://segment.com/docs/protocols/typewriter
+  language: javascript
+  sdk: analytics-node
+  languageOptions: {}
+trackingPlans:
+  #Tracking Plan: Website Tracking Plan
+  #https://api.segmentapis.com/tracking-plans/tp_28fvvSkvLLeOX4HiJlUH0KSNCD1
+  - id: tp_28fvvSkvLLeOX4HiJlUH0KSNCD1
+    path: analytics

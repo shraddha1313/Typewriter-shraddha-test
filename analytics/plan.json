@@ -1,0 +1,97 @@
+{
+	"createdAt": "2022-05-03T23:31:24.000Z",
+	"description": "",
+	"id": "tp_28fvvSkvLLeOX4HiJlUH0KSNCD1",
+	"name": "Website Tracking Plan",
+	"resourceSchemaId": "rs_28fvvPdBH5Sxcel2icU4i8X2828",
+	"rules": [
+		{
+			"createdAt": "2022-05-03T23:31:55.000Z",
+			"deprecatedAt": "0001-01-01T00:00:00.000Z",
+			"jsonSchema": {
+				"$id": "destination_submitted",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"eventMetadata": {
+					"name": "destination submitted",
+					"type": "TRACK"
+				},
+				"properties": {
+					"destination": {
+						"$id": "/properties/destination",
+						"type": [
+							"string"
+						]
+					},
+					"details": {
+						"$id": "/properties/details",
+						"type": [
+							"string"
+						]
+					},
+					"email": {
+						"$id": "/properties/email",
+						"type": [
+							"string",
+							"null"
+						]
+					},
+					"name": {
+						"$id": "/properties/name",
+						"type": [
+							"string"
+						]
+					},
+					"send email to": {
+						"$id": "/properties/send%20email%20to",
+						"type": [
+							"string"
+						]
+					},
+					"user": {
+						"$id": "/properties/user",
+						"properties": {
+							"destination": {
+								"$id": "/properties/properties/properties/user/properties/destination",
+								"type": [
+									"string"
+								]
+							},
+							"details": {
+								"$id": "/properties/properties/properties/user/properties/details",
+								"type": [
+									"string"
+								]
+							},
+							"email": {
+								"$id": "/properties/properties/properties/user/properties/email",
+								"type": [
+									"string"
+								]
+							},
+							"name": {
+								"$id": "/properties/properties/properties/user/properties/name",
+								"type": [
+									"string"
+								]
+							}
+						},
+						"required": [
+						],
+						"type": "object"
+					}
+				},
+				"required": [
+					"details"
+				],
+				"type": "object"
+			},
+			"key": "destination submitted",
+			"type": "TRACK",
+			"updatedAt": "2022-08-19T18:53:19.000Z",
+			"version": 1
+		}
+	],
+	"slug": "",
+	"type": "LIVE",
+	"updatedAt": "2023-07-31T04:35:59.000Z"
+}
