@@ -1,8 +1,15 @@
  // Import your auto-generated Typewriter client.
- import typewriter from './analytics/segment.js'
+ var typewriter = require('./analytics/segment.js');
 
  // Initialize analytics-node, per the analytics-node guide above.
- import { Analytics } from '@segment/analytics-node'
+ const {Analytics } = require('@segment/analytics-node')
+
+ const analytics = new Analytics({ writeKey: 'XH1gi3essFIrsALaAOaxmKDEuktdpAfH' })
+
+ // Pass in your analytics-node instance to Typewriter.
+ typewriter.setTypewriterOptions({
+   analytics: analytics
+ })
 
 var express = require('express');
 var app = express();
@@ -13,13 +20,6 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
- export const analytics = new Analytics({ writeKey: 'XH1gi3essFIrsALaAOaxmKDEuktdpAfH' })
-
- // Pass in your analytics-node instance to Typewriter.
- typewriter.setTypewriterOptions({
-   analytics: analytics
- })
-
 typewriter.destinationSubmitted({
-  destin
+  
 })
